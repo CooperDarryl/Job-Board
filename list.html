@@ -1,0 +1,530 @@
+<!DOCTYPE html >
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo1.png">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="assets/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="assets/script.js"></script>
+      <title>Search | JobBoard</title>
+   </head>
+   <body>
+      <script>document.body.className += ' fade-out';
+         $(function() {
+         $('body').removeClass('fade-out');
+         });</script>
+      <!--Navigation Menu-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-0 fixed-top " id="homenav">
+         <a class="navbar-brand" href="index.html" ><img src="assets/img/logo1.png" width="50" height="50" alt="job board logo"><span id="logo">JobBoard</span></a>
+         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link " href="login.html">Login </a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="register.html">Register</a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+               </li>
+
+            </ul>
+         </div>
+      </nav>
+      <!--./navigation Menu - End of navigation menu-->
+      <!--Breadcrumbs-->
+      <div>
+         <nav id="bread" aria-label="breadcrumb">
+            <ol class="breadcrumb bg-dark justify-content-center rounded-0">
+               <li class="breadcrumb-item active text-muted"><a href="index.html" class="text-light">Home</a></li>
+               <li class="breadcrumb-item text-muted ">Search</li>
+               <li class="breadcrumb-item "><a href="post.html" class="text-light">Post Ad</a></li>
+               <li class="breadcrumb-item "><a href="careeradvice.html" class="text-light">Careers</a></li>
+               <li class="breadcrumb-item "><a href="faq.html" class="text-light">FAQs</a></li>
+            </ol>
+         </nav>
+      </div>
+      <!--./breadcrumbs - End of breadcrumbs-->
+      <div class="bg-light">
+         <!--Page title with background-->
+      <div class="container-fluid bg-light" id="title">
+         <div>
+            <div>
+               <h2><strong>S</strong>earch</h2>
+            </div>
+         </div>
+      </div>
+      <div style="padding: 10px;">
+         <span><a href="index.html">Home</a></span> / <span>Search</span>
+      </div>
+      <!--./page title with background - End of title-->
+      <div style="padding-bottom: 10px;">
+         <div>
+            <h2 id="lh2" style="text-align: center;"><strong>152</strong> matches for<strong> Web Design</strong> in Portsmouth</h2>
+         </div>
+      </div>
+         <div id="vacancies" class="container mh-75 overflow-auto bg-light ">
+            <!--1 Row and 3 columns for content-->
+            <div class="row">
+               <!--Search column-->
+               <div class="col-sm-3 d-sm-none collapse d-sm-block justify-content-md-start overflow-auto" id="search">
+                  <!--Form-->
+                  <form method="post" action="list.html">
+                     <div class="split-forms">
+                        <h3>Job Title </h3>
+                        <input type="text" class="form-control" placeholder="e.g Web Designer">
+                     </div>
+                     <!--./Search column-->
+                     <!--Split forms-->
+                     <!--Location Input-->
+                     <div class="split-forms">
+                        <h3>Location </h3>
+                        <input type="text" class="form-control" placeholder="e.g Portsmouth">
+                     </div>
+                     <!--./Location Input-->
+                     <!--Salary Input-->
+                     <div class="split-forms">
+                        <h3>Salary (£)</h3>
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="Min.">
+                        </div>
+                     </div>
+                     <!--./Salary Input-->
+                     <!--./split forms-->
+                     <!--Checkbox-->
+                     <h3>Job Type </h3>
+                     <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Full-time</label>
+                     </div>
+                     <!-- /.checkbox -->
+                     <!--Checkbox-->
+                     <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Part-time</label>
+                     </div>
+                     <!-- /.checkbox -->
+                     <!--Checkbox-->
+                     <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Contract</label>
+                     </div>
+                     <!-- /.checkbox -->
+                     <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Temporary</label>
+                     </div>
+                     <!-- /.checkbox -->
+                     <div class="checkbox">
+                        <label>
+                        <input type="checkbox"> Placement</label>
+                     </div>
+                     <!-- /.checkbox -->
+                     <!--Radio-->
+                     <h3>Sort By </h3>
+                     <div class="checkbox">
+                        <label>
+                        <input type="radio" name="radio-test" value="1"> Most Recent</label>
+                     </div>
+                     <!-- /.radio -->
+                     <!--Radio-->
+                     <div class="checkbox">
+                        <label>
+                        <input type="radio" name="radio-test" value="3"> Featured</label>
+                     </div>
+                     <!-- /.radio -->
+                     <!--Search Button-->
+                     <button type="submit" class="btn btn-secondary btn-block"><i class="fa fa-refresh"></i>Search</button>
+                     <br/>
+                     <br/>
+                     <!--./search button-->
+                  </form>
+                  <!--./form-->
+               </div>
+               <!--./Search Column-->
+               <!--Job List Column-->
+               <!--6 columns-->
+               <br/>
+               <div id="listcol" class="col-sm-6 bg-light text-muted rounded-lg border overflow-auto ">
+                  <br/>
+                  <!--Posisition-list-item - UoP-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/uop.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-success">Featured</span>
+                     <h2><a href="apply.html">Junior <strong>Web Designer</strong></a></h2>
+                     <p>University of Portsmouth
+                        <br/> Portsmouth
+                     </p>
+                     <p>
+                        We have a fantastic role for an experienced Junior Front End Developer who will mainly be helping to build E-commerce websites and retail focused apps. If you are a front end developer who thrives...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-time</p>
+                        <p>Salary: £21k - £23k / Year</p>
+                        <p>Posted: 30/02/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item  UoP-->
+                  <!--Posistion-list-item Sparkstone-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/sparkstone.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-info">New</span>
+                     <h2><a href="apply1.html">Experienced <strong>Developer</strong></a></h2>
+                     <p>Sparkstone Technology
+                        <br/> Portsmouth
+                     </p>
+                     <p>
+                        We are looking for passionate developers to join our team and help us in developing the best web products in the south. You will require a good eye for detail...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-time</p>
+                        <p>Salary: £25k - £28k / Year</p>
+                        <p>Posted: 03/03/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply1.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item Sparkstone -->
+                  <!--Posistion-list-item TXM-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/txmtech.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-info">New</span>
+                     <h2><a href="apply2.html"><strong>Web </strong>Dev/<strong>Designer</strong></a></h2>
+                     <p>TXM Technology
+                        <br/> Southampton
+                     </p>
+                     <p>
+                        Full-stack developer to work in a fun and exciting creative digital agency based in Southampton. You’ll get the chance to work on a range of interesting projects with the latest and...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-time</p>
+                        <p>Salary: £22k - £25k / Year</p>
+                        <p>Posted: 01/03/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply2.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item TXM -->
+                  <!--Posistion-list-item KD-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/kdweb.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-info">New</span>
+                     <h2><a href="apply3.html"><strong>Web </strong>Developer</a></h2>
+                     <p>KD Web
+                        <br/> Southampton
+                     </p>
+                     <p>
+                        A busy and growing creative agency in Southampton is seeking a Web Designer / Developer to join our expanding team, to design and develop custom built brochure...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-time</p>
+                        <p>Salary: £22k / Year+ Benefits</p>
+                        <p>Posted: 04/03/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply3.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item KD -->
+                  <!--Posistion-list-item Lilo-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/lilo.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-primary">Top Rated</span>
+                     <h2><a href="apply4.html"><strong>Web </strong>Developer</a></h2>
+                     <p>Lilo Web Design
+                        <br/> Havant
+                     </p>
+                     <p>
+                        Intermediate understanding of web technologies is required for our new exciting role of part-time web developer at Lilo. Improve skills and collaborate with some of our leading web designers...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Part-time</p>
+                        <p>Salary: £21k / Year+ Benefits</p>
+                        <p>Posted: 04/03/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply4.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item Lilo -->
+                  <!--Posistion-list-item Moove-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/moove.png" alt="" class="img-fluid "></span></div>
+                     <h2><a href="apply5.html"><strong>Snr </strong>Developer</a></h2>
+                     <p>Moove
+                        <br/> Petersfield
+                     </p>
+                     <p>
+                        Hardworking individual to work with multiple platforms using the latest frameworks including React, Bootstrap4, Magneto & WordPress. Candidates should have a solid understanding...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-time</p>
+                        <p>Salary: £200 / Day</p>
+                        <p>Posted: 28/02/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply5.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item Moove -->
+                  <!--Posistion-list-item Minttwist-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/minttwist.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-primary">Placement</span>
+                     <h2><a href="apply6.html"><strong>Jnr </strong>Developer</a></h2>
+                     <p>Mint Twist
+                        <br/> Bournemouth
+                     </p>
+                     <p>
+                        Must be studying a degree in a related field and show evidence of previous work through a portfolio. Experience using GitHub is preferred but not essential...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Placement</p>
+                        <p>Salary: £250 /Week</p>
+                        <p>Posted: 25/02/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply6.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item Minttwist -->
+                  <!--Posistion-list-item Root-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/rootstudio.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-success">Featured</span>
+                     <h2><a href="apply7.html"><strong>Jnr </strong>Designer</a></h2>
+                     <p>Root/Studio
+                        <br/> Winchester
+                     </p>
+                     <p>
+                        We are looking to expand our team with an additional member whose skills focus mainly in areas such as Adobe Photoshop and the Adobe suite, InDesign, Illustrator, ...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-Time</p>
+                        <p>Salary: £18 - 22k / Year</p>
+                        <p>Posted: 28/02/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply7.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item Root-->
+                  <!--Posistion-list-item CS-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/creativesteam.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-primary">Top Rated</span>
+                     <h2><a href="apply8.html"><strong>Team </strong>Manager</a></h2>
+                     <p>Creative Steam
+                        <br/> London
+                     </p>
+                     <p>
+                        Team manager required to oversee a small team of web developers using CMSs (Drupal, Joomla, WordPress), a fast paced environment...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-Time</p>
+                        <p>Salary: £40k - £45k / Year + Bonuses</p>
+                        <p>Posted: 29/02/2020</p>
+                     </div>
+                     <div class="save ">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply8.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item CS-->
+                  <!--Posistion-list-item wani-->
+                  <div class="positions-list-item ">
+                     <div class="logo"><span><img src="assets/img/tmp/wani.png" alt="" class="img-fluid "></span></div>
+                     <span class="badge badge-pill badge-info">New</span>
+                     <h2><a href="apply9.html"><strong>Creative </strong>Dev</a></h2>
+                     <p>WANI Creative
+                        <br/> London
+                     </p>
+                     <p>
+                        We're looking for a creative, enthusiastic and well-organised individual that is confident working alone. Desired skills include HTML5, Motion Design, Animation...
+                     </p>
+                     <div class="position-list-item-details">
+                        <p>Job Type: Full-Time</p>
+                        <p>Salary: £30k - £37k / Year</p>
+                        <p>Posted: 01/02/2020</p>
+                     </div>
+                     <div class="save">
+                        <i style="padding-right: 10px;" class="material-icons md-36 noti" >notifications_none</i><i class="material-icons md-36 fav" >star_border</i>
+                     </div>
+                     <div>
+                        <a style="text-decoration: underline;" href="apply9.html">Read More</a>
+                        <br />
+                     </div>
+                     <br/>
+                  </div>
+                  <br/>
+                  <!-- /.position-list-item wani-->
+               </div>
+               <!-- /.Job List Colimn -->
+               <!--Advert Column-->
+               <div class="col-sm-3 text-center overflow-auto">
+                  <a href="contactus.html">
+                  <br/>
+                  <img src="assets/img/find-employees2.png" alt="" class="mx-auto d-block">
+                  </a>
+               </div>
+               <!--./Advert Column-->
+            </div>
+            <!--End of Row-->
+            <br/>
+            <!--New full width row-->
+            <div class="row">
+               <!--List Column Navigation-->
+               <div class="col-md-12">
+                  <nav aria-label="Page navigation">
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                           <a class="page-link" href="#" aria-label="Previous">
+                           <span aria-hidden="true">&laquo;</span>
+                           <span class="sr-only">Previous</span>
+                           </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                           <a class="page-link" href="#" aria-label="Next">
+                           <span aria-hidden="true">&raquo;</span>
+                           <span class="sr-only">Next</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <br/>
+               <!--./List Column Navigation -->
+            </div>
+            <!--End of Row-->
+            <!--New full width row-->
+            <!--Footer-->
+            <div class="row">
+               <div class="col-md-12 text-center">
+                  &copy; JobBoard 2020 &nbsp; &#8226; &nbsp; All rights reserved.
+                  <br/>
+                  <a href="privacypolicy.html">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="sitemap.html">Sitemap</a>
+               </div>
+            </div>
+            <!--End footer-->
+         </div>
+         <!--End of container-->
+      </div>
+<script>
+         $(document).ready(function() {
+         
+             $("#stoggle").click(function() {
+         
+                 window.scrollTo({
+                     top: 270,
+                     behavior: 'smooth'
+                 });
+                 if ($("#arrow").html() === "search") {
+                     $("#arrow").html("clear");
+         
+                 } else {
+                     $("#arrow").html("search");
+                     window.scrollTo({
+                         top: 0,
+                         behavior: 'smooth'
+                     });
+                 }
+             });
+             $(".noti").click(function(){
+         
+                 if ($(this).html() == "notifications_none"){
+                 $(this).html("notifications_active");
+                 $("#notiAudio")[0].play();
+                 }
+                 else {
+                     $(this).html("notifications_none")
+                 }
+             });
+             $(".fav").click(function(){
+                if ($(this).html() == "star_border"){
+                 $(this).html("star");
+                }
+                else {
+                 $(this).html("star_border");
+                }
+         
+             });
+         
+         });
+      </script>
+      <audio id="notiAudio">
+         <source src="assets/note.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
+   </body>
+</html>

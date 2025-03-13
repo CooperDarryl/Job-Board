@@ -1,0 +1,343 @@
+<!DOCTYPE html >
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo1.png">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="assets/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="assets/script.js"></script>
+      <title>Post Advert | JobBoard</title>
+   </head>
+   <body style="height: 100%;">
+      <script>document.body.className += ' fade-out';
+         $(function() {
+         $('body').removeClass('fade-out');
+         });</script>
+      <!--Navigation Menu-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-0 fixed-top " id="homenav">
+         <a class="navbar-brand" href="index.html" ><img src="assets/img/logo1.png" width="50" height="50" alt="job board logo"><span id="logo">JobBoard</span></a>
+         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link " href="login.html">Login </a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="register.html">Register</a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+               </li>
+
+            </ul>
+         </div>
+      </nav>
+      <!--./navigation Menu - End of navigation menu-->
+      <!--Breadcrumbs-->
+      <div>
+         <nav id="bread" aria-label="breadcrumb">
+            <ol class="breadcrumb bg-dark justify-content-center rounded-0">
+               <li class="breadcrumb-item "><a href="index.html" class="text-light">Home</a></li>
+               <li class="breadcrumb-item "><a href="list.html" class="text-light">Search</a></li>
+               <li class="breadcrumb-item active text-muted">Post Ad</li>
+               <li class="breadcrumb-item "><a href="careeradvice.html" class="text-light">Careers</a></li>
+               <li class="breadcrumb-item "><a href="faq.html" class="text-light">FAQs</a></li>
+            </ol>
+         </nav>
+      </div>
+      <!--./breadcrumbs - End of breadcrumbs-->
+
+      <!--Page Wrapper-->
+      <div class="page-wrapper bg-light">
+      <!--Page title with background-->
+      <div class="container-fluid " id="title">
+         <div>
+            <div>
+               <h2><strong>P</strong>ost Advert</h2>
+            </div>
+         </div>
+      </div>
+      <!--Location-->
+      <div style="padding-left: 10px; padding-top: 10px;">
+         <span><a href="index.html">Home</a></span> / <span><a href="list.html"></a></span><span id="current"> Post Ad</span>
+      </div>
+      <!--./Location-->
+      <!--Registration select form-->
+      <div class="container-fluid">
+         <form  id="registeredform">
+            <div class="form-row">
+               <div class="form-group col-md-12" id="regc">
+                  <h3>Have you posted here before? <span id="regs" style="font-size: small;">(You must register to post vacancies.)</span></h3>
+                  <select required id="reg" class="form-control font-weight-bold">
+                     <option value="" selected disabled>Select</option>
+                     <option value="1">No</option>
+                     <option value="2">Yes</option>
+                  </select>
+               </div>
+               <div class="form-group col-md-6 " id="jbidc" style="display: none;">
+                  <div>
+                     <h3>JobBoard CID <span style="font-size: small;">(You'll have recieved this when you registered.)</span></h3>
+                     <input id="jbid" type="text" class="form-control" placeholder="Your JobBoard ID"> 
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+      <!--./registration select-->
+
+         <div class="container">
+            <!--1 Row and 3 columns for content-->
+            <div class="row">
+               <!--Company column-->
+               <div class="col-md-12 border rounded bg-light" id="cominfo" style="display: none;">
+                     <div id="llogo" style="padding-left:15px; height:115px; width:105px; float:right;">
+                        <img class="clogo" style="padding-top:5px; width:100px;" alt="you company logo" src="assets/img/tmp/placehold.png">   
+                     </div>
+                  <h4>Company Details</h4>
+                  <form id="compform" action="#/">
+                     <div class="form-row">
+                        <div class="form-group col-md-12 ">
+                           <label for="inputComNam">Company Name</label>
+                           <input required type="text" class="form-control" id="inputComNam" placeholder="Company Name">
+                  
+                  <div id="msg">
+                  <div class="form-group" id="image-form">
+                  <input type="file" name="img" class="file" accept="image/*">
+                  <div class="input-group my-3">
+                  <span><img style="height: 40px; width:auto;" alt="your company logo" src="assets/img/tmp/placehold.png" class="clogo img-thumbnail"></span><input type="text" class="form-control" disabled placeholder="Upload your company logo" id="file">
+                  <div class="input-group-append">
+                     <button type="button" class="browse btn btn-sm btn-primary"> ...</button>
+                     </div>
+               </div>
+                  </div>
+                  </div>
+                  </div>
+               
+                  <div class="form-group col-md-6">
+                  <label for="inputConFnam">Contact First Name</label>
+                  <input required type="text" class="form-control" id="inputConFnam" placeholder="Contact First Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                  <label for="inputComSnam">Contact Surname</label>
+                  <input required type="text" class="form-control" id="inputComSnam" placeholder="Contact Surname">
+                  </div>
+                  <div class="form-group col-md-8">
+                  <label for="inputConEm">Contact Email</label>
+                  <input required type="email" class="form-control" id="inputConEm" placeholder="Contact Email">
+                  </div>
+                  <div class="form-group col-md-4">
+                  <label for="inputConPh">Phone</label>
+                  <input required type="text" class="form-control" id="inputConPh" placeholder="Phone">
+                  </div>
+                  </div>
+                  <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input required type="text" class="form-control" id="inputAddress" placeholder="100 Winston Ave">
+                  </div>
+                  <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input required type="text" class="form-control" id="inputAddress2" placeholder="Building name, floor">
+                  </div>
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                  <label for="inputCity">City or Town</label>
+                  <input required type="text" class="form-control" id="inputCity" placeholder="Portsmouth">
+                  </div>
+                  <div class="form-group col-md-4">
+                  <label for="inputCount">County</label>
+                  <select required id="inputCount" class="form-control">
+                  <option value="" selected >Select</option>
+                  <option>Bedfordshire</option>
+                  <option>Berkshire</option>
+                  <option>Bristol</option>
+                  <option>Buckinghamshire</option>
+                  <option>Cambridgeshire</option>
+                  <option>Cheshire</option>
+                  <option>City of London</option>
+                  <option>Cornwall</option>
+                  <option>Cumbria</option>
+                  <option>Derbyshire</option>
+                  <option>Devon</option>
+                  <option>Dorset</option>
+                  <option>County Durham</option>
+                  <option>East Riding of Yorkshire</option>
+                  <option>East Sussex</option>
+                  <option>Essex</option>
+                  <option>Gloucestershire</option>
+                  <option>Greater London</option>
+                  <option>Greater Manchester</option>
+                  <option>Hampshire</option>
+                  <option>Herefordshire</option>
+                  <option>Hertfordshire</option>
+                  <option>Isle of Wight</option>
+                  <option>Kent</option>
+                  <option>Lancashire</option>
+                  <option>Leicestershire</option>
+                  <option>Lincolnshire</option>
+                  <option>Merseyside</option>
+                  <option>Norfolk</option>
+                  <option>North Yorkshire</option>
+                  <option>Northamptonshire</option>
+                  <option>Northumberland</option>
+                  <option>Nottinghamshire</option>
+                  <option>Oxfordshire</option>
+                  <option>Rutland</option>
+                  <option>Shropshire</option>
+                  <option>Somerset</option>
+                  <option>South Yorkshire</option>
+                  <option>Staffordshire</option>
+                  <option>Suffolk</option>
+                  <option> Surrey</option>
+                  <option>Tyne and Wear</option>
+                  <option>Warwickshire</option>
+                  <option>West Midlands</option>
+                  <option>West Sussex</option>
+                  <option>West Yorkshire</option>
+                  <option>Wiltshire</option>
+                  <option>Worcestershire</option>
+                  </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                  <label for="inputPost">Postcode</label>
+                  <input required type="text" class="form-control" id="inputPost" placeholder="Postcode">
+                  </div>
+                  </div> 
+                  <div class="form-row">
+                  <div class="form-group col-md-6">
+                  <div class="form-check">
+                  <input required class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                  I confirm that I have fully read and understood the JobBoard <a href="privacypolicy.html" target="_blank">privacy policy</a>.
+                  </label>
+                  </div>   
+                  </div>
+                  <div class="form-group col-md-6">
+                  <div class="form-check">
+                  <button id="subcom" type="submit" class="btn btn-primary btn-md float-right">Submit</button>
+                  </div>   
+                  </div>
+                  </div>
+                  </form>
+               </div>
+               <!--./company column end of company column-->
+               <!--Vacancy Column -->
+               <div class="col-md-12 border rounded bg-light" id="vacdetails" style="display: none;">
+                  <div class="col-md-12">
+                  </div>
+                  <h4>Vacancy Details</h4>
+                  <form action="#/" id="vacform">
+                     <div class="form-row">
+                        <div class="form-group col-md-10">
+                           <label for="inputTitle">Job Title</label>
+                           <input required type="text" class="form-control" id="inputTitle" placeholder="Job Title">
+                        </div>
+                        <div class="form-group col-md-2">
+                           <label for="inputType">Job Type</label>
+                           <select required class="form-control" id="inputType">
+                              <option value="">Please select</option>
+                              <option value="Full Time">Full time</option>
+                              <option value="Part Time">Part time</option>
+                              <option value="Contract">Contract</option>
+                              <option value="Placement">Placement</option>
+                              <option value="Other">Other</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-4">
+                           <label for="inputHours">Hours</label>
+                           <input required type="number" class="form-control" id="inputHours" placeholder="Hours worked each week">
+                        </div>
+                        <div class="form-group col-md-4">
+                           <label for="inputSal">Salary £</label>
+                           <input required type="number" class="form-control" id="inputSal" placeholder="Earnings per annum">
+                        </div>
+                        <div class="form-group col-md-4">
+                           <label for="inputDat">Advert Expiry Date (DD/MM/YYYY)</label>
+                           <input type="date" class="form-control" id="inputDat">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-12">
+                           <label for="inputDesc">Job Description (1000 characters max)</label>
+                           <textarea required maxlength="1000" class="form-control" rows="8" id="inputDesc" placeholder="Company information, job description and any other relevant information."></textarea>
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-6">
+                           <label for="inputSkill">Skills (2 minimum)</label>
+                           <input required type="text" class="form-control" id="inputSkill" placeholder="Required Skill">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <label id="sk2" for="inputSkill2" style="visibility: hidden;" >Skills</label>
+                           <input required type="text" class="form-control" id="inputSkill2" placeholder="Required Skill">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <input type="text" class="form-control"  placeholder="Required Skill">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <input type="text" class="form-control"  placeholder="Required Skill">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <input type="text" class="form-control"  placeholder="Required Skill">
+                        </div>
+                        <div class="form-group col-md-6">
+                           <input type="text" class="form-control" placeholder="Required Skill">
+                        </div>
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group col-md-6">
+                           <div class="form-check">
+                              <input required class="form-check-input" type="checkbox" id="gridCheck2">
+                              <label class="form-check-label" for="gridCheck2">
+                              I confirm that I have fully read and understood the JobBoard <a href="privacypolicy.html" target="_blank">privacy policy</a>.
+                              </label>
+                           </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                           <div class="form-check">
+                              <button id="subvac" type="submit" class="btn btn-primary btn-md float-right">Submit</button>
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+                  <!--End of vacancy column-->
+               </div>
+               <!--End of container-->
+            </div>
+         </div>
+         </div>
+
+      
+         
+      <!--Message/Aler Modal-->
+      <div class="modal fade" id="success" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="mtitle"><img src="assets/img/logo1.png" width="50" height="50" alt="job board logo"> Good Luck</h5>
+                  <button type="button" class="close closebtn" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body" id="mbody">
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary closebtn" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--./message/alert modal-->
+      <script></script>
+   </body>
+</html>

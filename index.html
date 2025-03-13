@@ -1,0 +1,380 @@
+<!DOCTYPE html >
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo1.png">
+      <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="assets/style.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="assets/script.js"></script>
+      <title>Home | JobBoard</title>
+   </head>
+   <body >
+      <script>document.body.className += ' fade-out';
+         $(function() {
+         $('body').removeClass('fade-out');
+         });</script>
+      <!--Navigation Menu-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-0 fixed-top " id="homenav">
+         <a class="navbar-brand" href="index.html" ><img src="assets/img/logo1.png" width="50" height="50" alt="job board logo"><span id="logo">JobBoard</span></a>
+         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link " href="login.html">Login </a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="register.html">Register</a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+               </li>
+               <li class="nav-item list-inline mx-auto justify-content-center">
+                  <span style="cursor:pointer; user-select: none;" class="nav-link" id="invert" aria-label="high contrast mode"><span class="material-icons">
+                     invert_colors_off
+                     </span></span>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <!--./navigation Menu - End of navigation menu-->
+      <div>
+         <nav id="bread" aria-label="breadcrumb">
+            <ol class="breadcrumb bg-dark justify-content-center rounded-0">
+               <li class="breadcrumb-item text-muted">Home</li>
+               <li class="breadcrumb-item text-muted "><a href="list.html" class="text-light">Search</a></li>
+               <li class="breadcrumb-item "><a href="post.html" class="text-light">Post Ad</a></li>
+               <li class="breadcrumb-item "><a href="careeradvice.html" class="text-light">Careers</a></li>
+               <li class="breadcrumb-item "><a href="faq.html" class="text-light">FAQs</a></li>
+            </ol>
+         </nav>
+      </div>
+      <!--./breadcrumbs - End of breadcrumbs-->
+      <div class="page-wrapper bg-light">
+         <!--Page title and search form-->
+         <div class="container-fluid" id="titleh">
+            <div>
+               <div>
+                  <h2><strong>J</strong>obBoard</h2>
+               </div>
+            </div>
+            <section class="home-section hero-content overlay bg-image" id="home-section">
+               <div class="container">
+                  <div class="row align-items-center justify-content-center">
+                     <div class="col-md-12">
+                        <div class="mb-5 text-center">
+                           <h1>Start Your Search Here</h1>
+                        </div>
+                        <form action="list.html" class="search-jobs-form">
+                           <div class="row mb-5">
+                              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                                 <input type="text" id="JobT" class="form-control form-control-lg" placeholder="Job Title" aria-label="Job Title">
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                                 <select id="Loc" class="selectpicker form-control form-control-lg" data-style="btn-white btn-lg" aria-label="Location"
+                                    data-width="100%" data-live-search="true" title="Select Region">
+                                    <option value="" selected disabled>Location</option>
+                                    <option>Bedfordshire</option>
+                                    <option>Berkshire</option>
+                                    <option>Bristol</option>
+                                    <option>Buckinghamshire</option>
+                                    <option>Cambridgeshire</option>
+                                    <option>Cheshire</option>
+                                    <option>City of London</option>
+                                    <option>Cornwall</option>
+                                    <option>Cumbria</option>
+                                    <option>Derbyshire</option>
+                                    <option>Devon</option>
+                                    <option>Dorset</option>
+                                    <option>County Durham</option>
+                                    <option>East Riding of Yorkshire</option>
+                                    <option>East Sussex</option>
+                                    <option>Essex</option>
+                                    <option>Gloucestershire</option>
+                                    <option>Greater London</option>
+                                    <option>Greater Manchester</option>
+                                    <option>Hampshire</option>
+                                    <option>Herefordshire</option>
+                                    <option>Hertfordshire</option>
+                                    <option>Isle of Wight</option>
+                                    <option>Kent</option>
+                                    <option>Lancashire</option>
+                                    <option>Leicestershire</option>
+                                    <option>Lincolnshire</option>
+                                    <option>Merseyside</option>
+                                    <option>Norfolk</option>
+                                    <option>North Yorkshire</option>
+                                    <option>Northamptonshire</option>
+                                    <option>Northumberland</option>
+                                    <option>Nottinghamshire</option>
+                                    <option>Oxfordshire</option>
+                                    <option>Rutland</option>
+                                    <option>Shropshire</option>
+                                    <option>Somerset</option>
+                                    <option>South Yorkshire</option>
+                                    <option>Staffordshire</option>
+                                    <option>Suffolk</option>
+                                    <option> Surrey</option>
+                                    <option>Tyne and Wear</option>
+                                    <option>Warwickshire</option>
+                                    <option>West Midlands</option>
+                                    <option>West Sussex</option>
+                                    <option>West Yorkshire</option>
+                                    <option>Wiltshire</option>
+                                    <option>Worcestershire</option>
+                                 </select>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                                 <select id="JType" class="selectpicker form-control form-control-lg" data-style="btn-white btn-lg" aria-label="Job type"
+                                    data-width="100%" data-live-search="true" title="Select Job Type">
+                                    <option value="" disabled selected>Job Type</option>
+                                    <option>Full Time</option>
+                                    <option>Part Time</option>
+                                    <option>Contract</option>
+                                    <option>All</option>
+                                 </select>
+                              </div>
+                              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                                 <button  id="search" type="submit"  class="btn btn-secondary btn-lg btn-block text-white btn-search" aria-label="Search"><span
+                                    class="icon-search icon mr-2"></span>Search</button>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12 popular-keywords d-flex justify-content-center">
+                                 <h3>Top Searches</h3>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-12 d-flex justify-content-center">
+                                 <ol class="keyword h5" >
+                                    <li><a href="list.html" class="">UI Designer</a></li>
+                                    <li><a href="list.html" class="">Python</a></li>
+                                    <li><a href="list.html" class="">Developer</a></li>
+                                 </ol>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+         <section class="py-5 bg-image overlay-primary fixed overlay " id="next"
+            style="background-color:teal; color:white;">
+            <div class="container">
+               <div class="row mb-5 justify-content-center">
+                  <div class="col-md-7 text-center">
+                     <h2 class="section-title mb-2 text-white">Make <span style="font-style: italic;">IT</span> Happen</h2>
+                     <p class="lead text-white">The best IT focussed job search experience in the UK</p>
+                  </div>
+               </div>
+               <div class="row pb-0 block__19738 section-counter">
+                  <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0" style="text-align: center;">
+                     <div class="d-flex align-items-center justify-content-center mb-2">
+                        <strong class="number number1" style="font-size: 2em" data-number="1930">1930</strong>
+                     </div>
+                     <span class="caption">Candidates</span>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0" style="text-align: center;">
+                     <div class="d-flex align-items-center justify-content-center mb-2">
+                        <strong class="number number2" style="font-size: 2em;" data-number="550">550</strong>
+                     </div>
+                     <span class="caption">Registered Companies</span>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0" style="text-align: center;">
+                     <div class="d-flex align-items-center justify-content-center mb-2">
+                        <strong class="number number3" style="font-size: 2em;" data-number="54">114</strong>
+                     </div>
+                     <span class="caption">Vacancies Posted</span>
+                  </div>
+                  <div class="col-6 col-md-6 col-lg-3 mb-5 mb-lg-0" style="text-align: center;">
+                     <div class="d-flex align-items-center justify-content-center mb-2">
+                        <strong class="number number4" style="font-size: 2em;" data-number="120">104</strong>
+                     </div>
+                     <span class="caption">Vacancies Filled</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="site-section bg-light">
+            <div class="container ">
+               <div class="row mb-5 justify-content-center">
+                  <div class="col-md-7 text-center">
+                     <h2 class="section-title mb-2">Latest Vacancies</h2>
+                  </div>
+               </div>
+               <ul class="job-listings mb-5 ">
+                  <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+                     <div class="job-listing-logo logoi">
+                        <img src="assets/img/tmp/uop.png" alt="University of Portsmouth" class="img-fluid">
+                     </div>
+                     <div class="job-listing-about d-sm-flex w-100 justify-content-between mx-4">
+                        <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                           <a href="apply.html">
+                              <h2>Junior Web Designer</h2>
+                           </a>
+                           <strong>University of Portsmouth</strong>
+                        </div>
+                        <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+                           <span class="icon-room"></span>Portsmouth
+                        </div>
+                        <div class="job-listing-meta">
+                           <span class="badge badge-info">NEW</span>
+                        </div>
+                     </div>
+                  <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+                     <div class="job-listing-logo logoi">
+                        <img src="assets/img/tmp/sparkstone.png" alt="Sparkstone" class="img-fluid">
+                     </div>
+                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                           <a href="apply1.html">
+                              <h2>Exp Developer</h2>
+                           </a>
+                           <strong>Sparkstone Technology</strong>
+                        </div>
+                        <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+                           <span class="icon-room"></span>Portsmouth
+                        </div>
+                        <div class="job-listing-meta">
+                           <span class="badge badge-info">NEW</span>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+                     <div class="job-listing-logo logoi">
+                        <img src="assets/img/tmp/kdweb.png" alt="K D Web" class="img-fluid">
+                     </div>
+                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                           <a href="apply3.html">
+                              <h2>Web Developer</h2>
+                           </a>
+                           <strong>KD Web</strong>
+                        </div>
+                        <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+                           <span class="icon-room"></span>Southampton
+                        </div>
+                        <div class="job-listing-meta">
+                           <span class="badge badge-info">NEW</span>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+                     <div class="job-listing-logo logoi">
+                        <img src="assets/img/tmp/wani.png" alt="Wani Creative" class="img-fluid">
+                     </div>
+                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                           <a href="apply9.html">
+                              <h2>Creative Dev</h2>
+                           </a>
+                           <strong>WANI Creative</strong>
+                        </div>
+                        <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+                           <span class="icon-room"></span>London
+                        </div>
+                        <div class="job-listing-meta">
+                           <span class="badge badge-info">NEW</span>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+                     <div class="job-listing-logo logoi">
+                        <img src="assets/img/tmp/creativesteam.png" alt="Creative Steam" class="img-fluid">
+                     </div>
+                     <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+                        <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                           <a href="apply8.html">
+                              <h2>Team Manager</h2>
+                           </a>
+                           <strong>Creative Steam</strong>
+                        </div>
+                        <div class="job-listing-location mb-3 mb-sm-0 custom-width w-25">
+                           <span class="icon-room"></span>London
+                        </div>
+                        <div class="job-listing-meta">
+                           <span class="badge badge-info">NEW</span>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+                     <!--Footer-->
+            <div class="row bg-light">
+               <div class="col-md-12 text-center">
+                  &copy; JobBoard 2020 &nbsp; &#8226; &nbsp; All rights reserved.
+                  <br/>
+                  <a href="privacypolicy.html">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="sitemap.html">Sitemap</a>
+               </div>
+            </div>
+         <!--End footer-->
+         </section>
+      </div>
+      <!--End of Wrapper-->
+      <script>
+         $(document).ready(function(){
+         
+         var num1 = $(".number1").html();
+             $({countNum: 1}).animate({countNum: num1}, {
+                 duration: 2800,
+                     easing:'linear',
+                         step: function() {
+             $(".number1").html(Math.floor(this.countNum));
+             },
+             complete: function() {
+             console.log('finished '+this.countNum);
+             $(".number1").html(Math.floor(this.countNum));
+             }
+         });
+             var num2 = $(".number2").html();
+             $({countNum: 1}).animate({countNum: num2}, {
+                 duration: 3000,
+                     easing:'linear',
+                         step: function() {
+             $(".number2").html(Math.floor(this.countNum));
+             },
+             complete: function() {
+             console.log('finished '+this.countNum);
+             $(".number2").html(Math.floor(this.countNum));
+             }
+             });
+         
+             var num3 = $(".number3").html();
+             $({countNum: 1}).animate({countNum: num3}, {
+                 duration: 3200,
+                     easing:'linear',
+                         step: function() {
+             $(".number3").html(Math.floor(this.countNum));
+             },
+             complete: function() {
+             console.log('finished '+this.countNum);
+             $(".number3").html(Math.floor(this.countNum));
+             }
+         
+             });
+             var num4 = $(".number4").html();
+             $({countNum: 1}).animate({countNum: num4}, {
+                 duration: 3400,
+                     easing:'linear',
+                         step: function() {
+             $(".number4").html(Math.floor(this.countNum));
+             },
+             complete: function() {
+             console.log('finished '+this.countNum);
+             $(".number4").html(Math.floor(this.countNum));
+             }
+             });
+         });
+      </script>
+   </body>
+</html>
